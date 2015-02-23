@@ -1,6 +1,5 @@
 $(document).ready( function() {
 
-
 	$.tools.overlay.addEffect("fade", function(position, done) {
 		this.getOverlay().css(position).fadeIn(this.getConf().speed, done);
 	},
@@ -11,50 +10,26 @@ $(document).ready( function() {
 
 	$('a[rel]').each(function() {
 		$(this).overlay({
-			mask: 'black',
-			effect: 'fade',
+			mask: {
+				color: 'black',
+				loadSpeed: 0,
+				closeSpeed: 0
+			},
 			top: 'center',
-
 			onBeforeLoad: function() {
+				console.log(this + 'load');
 				var wrap = this.getOverlay().find('.content-wrap');
 				wrap.load(this.getTrigger().attr('href'));
-				
 			},
-			// // onLoad: function() {
-			// // 	var msk = $.mask;
-			// // 	if ( msk.isLoaded() != 'full' ) {
-			// // 		msk.load('black');
-			// // 		$('#terms').css('z-index', '100000000');
-			// // 		$('#privacy').css('z-index', '9999999');
-			// // 	}
-			// // },
-			// onClose: function() {
-			// 	//$.mask.close();
-			// },
-			// onLoad: function(){
-		 //        var t = $.mask;
-		 //        if(!t.isLoaded()){
-		 //            t.load();
-		 //            var ov = this.getOverlay();
-		 //            //ov.css('z-index', '9999');
-		 //        }
-		 //    },
-
 			oneInstance: true
 		});
-
 	});
+
 
 	$('.terms-from-privacy').click(function(e) {
 	 	e.preventDefault();
+	 	console.log('terms from privacy loaded');
 	 	$('#terms').css('z-index', '100000000');
-	 	$.mask.load('black');
 	});
-
-	// $('.overlay').click(function() {
-	// 	$.mask.load('black');
-	// 	$('#privacy').css('z-index', '9999999');
-	// })
-
 
 });
