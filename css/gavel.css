@@ -27,6 +27,9 @@ h1 {
   line-height: 44px;
   font-weight: 400;
 }
+h3 {
+  font-size: 1.6em;
+}
 p {
   max-width: 400px;
   margin-bottom: 5px;
@@ -224,19 +227,25 @@ img {
   -moz-animation-fill-mode: both;
   animation-fill-mode: both
 }
-.overlay {
-  /* display: none; */
+
+/* legal overlays */
+
+#terms,
+#privacy {
+  height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  background-color: #888;
-  background-color: rgba(0, 0, 0, 0.8);
+}
+div.content-wrap {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  padding: 1em;
 }
 .content {
   background-color: white;
   color: black;
-  width: 80%;
-  margin: 2em auto;
+  margin: 0 auto;
   padding: 2em;
 }
 .content > h1 {
@@ -245,21 +254,36 @@ img {
 }
 .content > * {
   color: black;
-  width: 100%;
   max-width: 100%;
 }
 .content a {
   color: black;
 }
-.close {
-  position: relative;
-  width: 2em;
-  cursor: pointer;
-  font-size: 2em;
-  float: right;
-  background-color: white;
-  border: none;
+.legal-overlay {
+  display: none;
+  background-color: #fff;
+  max-width: 90%;
+  max-height: 90%;
+  margin: 2em auto;
+  top: 0;
+  left: 0;
+  bottom: 3em;
+  position: fixed;
 }
+.legal-overlay .close {
+  background-color: #fff;
+  background-image: url(/images/close.svg);
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute; 
+  right: 2em; 
+  top: 1.3em;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
+
 /* animation css */
 
 @-webkit-keyframes slideRight{
@@ -558,6 +582,5 @@ img {
   }
   #fade img {
     width: 270px;
-    margin-left: 16px;
   }
 }

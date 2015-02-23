@@ -5,7 +5,6 @@
   <title>Gavel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="images/gavel_icon.png">
-  <link rel="stylesheet" href="css/jquery-mobile.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/gavel.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -15,11 +14,11 @@
     <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-    <script type="text/javascript" src="js/placeholders.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript" src="js/placeholders.js"></script>
 
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -54,12 +53,11 @@
       ga('send', 'pageview');
     
     </script>
+
 </head>
 
 <body>
-  <div data-role="page" class="container" id="gavel">
-    <div data-role="main">
-
+  <div class="container" data-role="main">
     <div id="left" class="screenshotcolumn">
       <div class="screenshotblock">
         <div class="screenshotcontainer">
@@ -113,206 +111,18 @@
     </div><!--col, right-->
 
     <div class="copyright">
-      <a href="#terms" class="terms">Terms and Conditions</a>
+      <a href="terms.html" rel="#terms" class="overlay">Terms and Conditions</a>
         &nbsp;&nbsp;&nbsp;
-      <a href="#privacy" class="privacy">Privacy Policy</a>
+      <a href="privacy.html" rel="#privacy" class="overlay">Privacy Policy</a>
         <br>
       © 2014 Gavel, Inc.
     </div><!--copyright-->
+    <div class="legal-overlay" id="terms">
+      <div class="content-wrap"></div>
     </div>
-  </div><!--container-->
-  <div data-role="page" class="overlay" id="terms">
-    <div data-role="main" class="content">
-      <a href="#gavel"><button title="Close (Esc)" type="button" class="close">×</button></a>
-      <h1>Terms and Conditions</h1>
-      <p>Last updated: November 1, 2014
-      <br><br>
-      Please read these Terms and Conditions ("Terms") carefully before using the Gavel mobile application and website (the "Service") operated by Gavel, Inc. ("us", "we" or "our").
-      <br><br>
-      Your access to and use of the Service is conditioned upon your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who wish to access or use the Service.
-      <br><br>
-      By accessing or using the Service you agree to be bound by these Terms. If you do not accept any part of the Terms then you do not have permission to access the Service.</p>
-      <br>
-      <h3>Communications</h3>
-      <p>By creating an account on our Service, you agree to subscribe to newsletters, marketing or promotional materials and other information we may send. However, you may opt out of receiving any, or all, of these communications from us by following the unsubscribe link or instructions provided in any email we send.</p>
-      <br>
-      <h3>Content</h3>
-      <p>Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos or other material ("Content"). You are responsible for the Content that you post on or through the Service, including its legality, reliability and appropriateness.
-      <br><br>
-      By posting Content on or through the Service, You represent and warrant that: (i) the Content is yours (you own it) and/or you have the right to use it and the right to grant us the rights and license as provided in these Terms, and (ii) that the posting of your Content on or through the Service does not violate the privacy rights, publicity rights, intellectual property rights, contract rights or any other rights of any person or entity.
-      <br><br>
-      You retain any and all of your rights to any Content you submit, post or display on or through the Service and you are responsible for protecting those rights. We take no responsibility and assume no liability for Content you or any third party posts on or through the Service. However, by posting Content using the Service you grant us the nonexclusive right and license to use, modify, publicly perform, publicly display, reproduce and distribute such Content on and through the Service. You agree that this license includes the right for us to make your Content available to other users of the Service, who may also use your Content subject to these Terms.
-      <br><br>
-      Gavel, Inc. has the right but not the obligation to monitor and edit all Content provided by users.
-      <br><br>
-      In addition, Content found on or through this Service are the property of Gavel, Inc. or used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy or use said Content, whether in whole or in part, for commercial purposes or for personal gain, without express advance written permission from us.</p>
-      <br>
-      <h3>Accounts</h3>
-      <p>When you create an account with us, you guarantee that you are above the age of 18 and that the information you provide us is accurate, complete and current at all times. Inaccurate, incomplete or obsolete information may result in the immediate termination of your account on the Service.
-      <br><br>
-      You are responsible for maintaining the confidentiality of your account and password, including but not limited to the restriction of access to your computer and/or account. You agree to accept responsibility for any and all activities or actions that occur under your account and/or password, whether your password is with our Service or a third-party service. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
-      <br><br>
-      You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trademark that is subject to any rights of another person or entity other than you, without appropriate authorization. You may not use as a username any name that is offensive, vulgar or obscene.
-      <br><br>
-      We reserve the right to refuse service, terminate accounts and remove or edit Content in our sole discretion.</p>
-      <br>
-      <h3>Copyright Policy</h3>
-      <p>We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on the Service infringes on the copyright or other intellectual property rights of any person or entity ("Infringement").
-      <br><br>
-      If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied in a way that constitutes copyright infringement, please submit your claim via email to support@gavel.co, with the subject line: "Copyright Infringement" and include in your claim a detailed description of the alleged Infringement as detailed below, under "DMCA Notice and Procedure for Copyright Infringement Claims."
-      <br><br>
-      You may be held accountable for damages (including costs and attorneys' fees) for misrepresentation or bad-faith claims on the infringement of any Content found on and/or through the Service on your copyright.</p>
-      <br>
-      <h3>DMCA Notice and Procedure for Copyright Infringement Claims</h3>
-      <p>You may submit a notification pursuant to the Digital Millennium Copyright Act (“DMCA”) by providing our Copyright Agent with the following information in writing (see 17 U.S.C 512(c)(3) for further detail):
-      <br><br>
-      - an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright's interest;
-      <br>
-      - a description of the copyrighted work that you claim has been infringed, including the URL (i.e., web page address) of the location where the copyrighted work exists or a copy of the copyrighted work;
-      <br>
-      - identification of the URL or other specific location on the Service where the material that you claim is infringing is located;
-      <br>
-      - your address, telephone number and email address;
-      <br>
-      - a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent or the law;
-      <br>
-      - a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.
-      <br><br>
-      You can contact our Copyright Agent via email at <a href="mailto:support@gavel.co">support@gavel.co</a>.</p>
-      <br>
-      <h3>Intellectual Property</h3>
-      <p>The Service and its original content (excluding Content provided by users), features and functionality are and will remain the exclusive property of Gavel, Inc. and its licensors. The Service is protected by copyright, trademark and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Gavel, Inc.</p>
-      <br>
-      <h3>Links to Other Sites and Services</h3>
-      <p>Our Service may contain links to third party web sites or services that are not owned or controlled by Gavel, Inc.
-      <br><br>
-      Gavel, Inc. has no control over, and assumes no responsibility for the content, privacy policies or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.
-      <br><br>
-      You acknowledge and agree that Gavel, Inc. shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such third party web sites or services.
-      <br><br>
-      We strongly advise you to read the terms and conditions and privacy policies of any third party web sites or services that you visit.</p>
-      <br>
-      <h3>Termination</h3>
-      <p>We may terminate or suspend your account and bar access to the Service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.
-      <br><br>
-      All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</p>
-      <br>
-      <h3>Indemnification</h3>
-      <p>You agree to defend, indemnify and hold harmless Gavel, Inc., its licensees and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of a) your use and access of the Service, by you or any person using your account and password; b) a breach of these Terms; or c) Content posted on the Service.</p>
-      <br>
-      <h3>Limitation of Liability</h3>
-      <p>In no event shall Gavel, Inc., nor its directors, employees, partners, agents, suppliers or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</p>
-      <br>
-      <h3>Disclaimer</h3>
-      <p>Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
-      <br><br>
-      Gavel, Inc., its subsidiaries, affiliates and licensors do NOT warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.</p>
-      <br>
-      <h3>Exclusions</h3>
-      <p>Some jurisdictions do not allow the exclusion of certain warranties or the exclusion or limitation of liability for consequential or incidental damages, so the limitations above may not apply to you.</p>
-      <br>
-      <h3>Governing Law</h3>
-      <p>These Terms shall be governed and construed in accordance with the laws of California, United States, without regard to its conflict of law provisions.
-      <br><br>
-      Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between you and Gavel, Inc. regarding our Service, and supersede and replace any prior agreements regarding the Service.</p>
-      <br>
-      <h3>Changes to These Terms and Conditions</h3>
-      <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
-      <br><br>
-      By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not accept the new terms, you are no longer authorized to use the Service.</p>
-      <br>
-      <h3>Contact Us</h3>
-      <p>If you have any questions about these Terms, please <a href="mailto:support@gavel.co?Subject=Question%20About%20Terms%20and%20Conditions">contact us</a>.</p>
-    </div>
-  </div>
-  <div data-role="page" class="overlay" id="privacy">
-    <div data-role="main" class="content">
-      <a href="#gavel"><button title="Close (Esc)" type="button" class="close">×</button></a>
-      <h1>Privacy Policy</h1>
-      <p>Last updated: November 1, 2014
-      <br>
-      Gavel, Inc. ("us", "we" or "our") operates the Gavel mobile application and website (the "Service").
-      <br><br>
-      This page (the “Privacy Policy”) informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service.
-      <br><br>
-      We will not use or share your information with anyone except as described in this Privacy Policy.
-      <br><br>
-      We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our <a href="#" class="terms">Terms and Conditions</a>.</p>
-      <br>
-      <h3>Information Collection and Use</h3>
-      <p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your email address, name and phone number ("Personal Information").
-      <br><br>
-      We collect this information for the purpose of providing the Service, identifying and communicating with you, responding to your requests/inquiries and improving our Service.</p>
-      <br>
-      <h3>Log Data</h3>
-      <p>We collect information that your browser sends whenever you visit our Service. This log data may include information such as your computer's IP address, browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages and other statistics.
-      <br><br>
-      In addition, we may use third party services such as Google Analytics that collect, monitor and analyze this type of information in order to increase our Service's functionality. These third party service providers have their own privacy policies addressing how they use such information.
-      <br><br>
-      When you access the Service by or through a mobile device, we may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile device’s unique device ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use, your location information and other statistics.</p>
-      <br>
-      <h3>Location Information</h3>
-      <p>We may use and store information about your location depending on the permissions you have set on your device. We use this information to provide features of our Service and to improve and customize our Service. You can enable or disable location services when you use our Service at any time through your mobile device settings.</p>
-      <br>
-      <h3>Cookies</h3>
-      <p>Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a web site and transferred to your device. We use cookies to collect information in order to improve our Service.
-      <br><br>
-      You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. The help feature on most browsers provide information on how to accept cookies, disable cookies or to notify you when receiving a new cookie.
-      <br><br>
-      If you do not accept cookies you may not be able to use some features of our Service, and we recommend that you leave them turned on.</p>
-      <br>
-      <h3>Do Not Track Disclosure</h3>
-      <p>We support Do Not Track. Do Not Track is a preference you can set in your web browser to inform websites that you do not want to be tracked.
-      <br><br>
-      You can enable or disable Do Not Track by visiting the preferences or settings page of your web browser.</p>
-      <br>
-      <h3>Service Providers</h3>
-      <p>We may employ third party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services and/or to assist us in analyzing how our Service is used.
-      <br><br>
-      These third parties have access to your Personal Information only to perform specific tasks on our behalf and are obligated not to disclose or use your information for any other purpose.</p>
-      <br>
-      <h3>Communications</h3>
-      <p>We may use your Personal Information to contact you with newsletters, marketing or promotional materials and other information that may be of interest to you. You may opt out of receiving any or all of these communications from us by following the unsubscribe link or instructions provided in any email we send or by contacting us.</p>
-      <br>
-      <h3>Compliance with Laws</h3>
-      <p>We will disclose your Personal Information where required to do so by law or subpoena or if we believe that such action is necessary to comply with the law and the reasonable requests of law enforcement or to protect the security or integrity of our Service.</p>
-      <br>
-      <h3>Change of Control</h3>
-      <p>If Gavel, Inc. is involved in a merger, acquisition or other change of control, your Personal Information may be transferred as a business asset. In such cases, we will provide notice if your Personal Information is transferred and/or becomes subject to a different Privacy Policy.</p>
-      <br>
-      <h3>Security</h3>
-      <p>The security of your Personal Information is important to us, and we strive to implement and maintain reasonable, commercially acceptable security procedures and practices appropriate to the nature of the information we store, in order to protect it from unauthorized access, destruction, use, modification or disclosure.
-      <br><br>
-      However, please be aware that no method of transmission over the internet or method of electronic storage is 100% secure and we are unable to guarantee the absolute security of the Personal Information we have collected from you.</p>
-      <br>
-      <h3>International Transfer</h3>
-      <p>Your information, including Personal Information, may be transferred to and maintained on computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.
-      <br><br>
-      If you are located outside United States and choose to provide information to us, please note that we transfer the information, including Personal Information, to United States and process it there.
-      <br><br>
-      Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p>
-      <br>
-      <h3>Links to Other Sites and Services</h3>
-      <p>Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the privacy policy of every site you visit.
-      <br><br>
-      We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
-      <br>
-      <h3>Children's Privacy</h3>
-      <p>Only persons age 13 or older have permission to access our Service. Our Service does not address anyone under the age of 13.
-      <br><br>
-      We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you learn that your child under 13 has provided us with Personal Information, please contact us. If we discover that a child under 13 has provided us with Personal Information, we will delete such information from our servers.</p>
-      <br>
-      <h3>Changes to This Privacy Policy</h3>
-      <p>This Privacy Policy is effective as of November 1, 2014 and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.
-      <br><br>
-      We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. Your continued use of the Service after we post any modifications to the Privacy Policy on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Privacy Policy.
-      <br><br>
-      If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.</p>
-      <br>
-      <h3>Contact Us</h3>
-      <p>If you have any questions about this Privacy Policy, please <a href="mailto:support@gavel.co?Subject=Question%20About%20Privacy%20Policy">contact us</a>.</p>
-    </div>
-  </div>
-
+    <div class="legal-overlay" id="privacy">
+      <div class="content-wrap"></div>
+    </div> 
+  </div><!--container--> 
 </body>
 </html>
