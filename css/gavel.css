@@ -34,7 +34,7 @@ p {
   max-width: 400px;
   margin-bottom: 5px;
   font-family: Lato, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   font-weight: 300;
 }
@@ -107,7 +107,7 @@ img {
   width: 302px;
   height: 616px;
   margin-left: 24px;
-  padding-top: 94px;
+  padding-top: 95px;
 }
 .contentcontainer {
   display: inline-block;
@@ -115,9 +115,20 @@ img {
   margin-left: 40px;
 }
 .gavelappicon {
-  display: block;
+  display: inline-block;
   margin-right: auto;
   margin-left: 0px;
+  margin-bottom: 25px;
+}
+.gavellogo {
+  margin-top: -20px;
+  margin-left: 25px;
+  display: inline-block;
+}
+.appstore {
+  margin-top: 30px;
+  display: block;
+  width: 180px;
 }
 .email {
   display: block;
@@ -388,10 +399,10 @@ div.content-wrap {
   100% {  opacity: 0;  }
 }
 #fade img.top {
-  -webkit-animation: cf3FadeInOut 2s ease-in-out 2s infinite alternate;
-  -moz-animation: cf3FadeInOut 2s ease-in-out 2s infinite alternate;
-  -o-animation: cf3FadeInOut 2s ease-in-out 2s infinite alternate;
-  animation: cf3FadeInOut 2s ease-in-out 2s infinite alternate;
+  -webkit-animation: cf3FadeInOut 4s ease-in-out 4s infinite alternate;
+  -moz-animation: cf3FadeInOut 4s ease-in-out 4s infinite alternate;
+  -o-animation: cf3FadeInOut 4s ease-in-out 4s infinite alternate;
+  animation: cf3FadeInOut 4s ease-in-out 4s infinite alternate;
 }
 
 @media (max-width: 991px) {
@@ -485,7 +496,16 @@ div.content-wrap {
     margin-left: auto;
   }
   .gavelappicon {
+    display: block;
     margin-left: auto;
+  }
+  .gavellogo {
+    display: block;
+    margin: 20px auto;
+  }
+  .appstore {
+    margin-left: auto;
+    margin-right: auto;
   }
   .emailform {
     display: block;
